@@ -49,7 +49,7 @@ function generatePassword() {
       options = options.concat(symbolList);
 
     }
-  
+
     for (var i = 0; i < desiredLength; i++) {
       finalPassword = finalPassword + options[Math.floor(Math.random() * options.length)]
     }
@@ -57,6 +57,21 @@ function generatePassword() {
   }
 };
 
+
+
+
+// Disables the generate password button after it generates a password
+document.getElementById("generate").onclick = function () {
+  //disable
+  this.disabled = true;
+}
+
+
+
+//Refreshes the page when the reset button is clicked
+function refreshPage() {
+  window.location.reload();
+}
 
 
 // Write password to the #password input
