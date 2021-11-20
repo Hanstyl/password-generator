@@ -31,3 +31,6 @@ Links to page
 GitHub Pages - https://hanstyl.github.io/password-generator/
 
 GitHub Repository - https://github.com/Hanstyl/password-generator
+
+
+![Screen Shot 2021-11-19 at 11 08 01 PM](https://user-images.githubusercontent.com/79775889/142716520-cf4e232f-b3ba-4229-ad54-b6fddb3d267d.png)
