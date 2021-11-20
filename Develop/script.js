@@ -12,10 +12,11 @@ function generatePassword() {
 
   var desiredLength = prompt("How many characters will your password have?");
 
-  if (desiredLength <= 8 || desiredLength >= 128) {
+  if (desiredLength < 8 || desiredLength > 128) {
     alert("Password length must be 8 or more characters long. MAX character limit is 128!")
 
   } else {
+    var yesOrNo = confirm("Please select OK for YES or CANCEL for NO on the following pop ups. Select OK now to continue");
     var upperCon = confirm("Will your password use uppercase letters?");
     var lowerCon = confirm("Will your password use lowercase letters?");
     var numberCon = confirm("Will you password use numbers?");
@@ -26,7 +27,7 @@ function generatePassword() {
     var options = [];
 
     if (upperCon) {
-      //options.push(...upperList);
+      //options.push(...upperList);      //this was another method i could not figure out. I wanted to leave them in for the future. 
       options = options.concat(upperList);
 
     }
